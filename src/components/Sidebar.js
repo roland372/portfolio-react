@@ -9,7 +9,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 				<button className='close-btn' id='close-btn' onClick={toggleSidebar}>
 					<i className='fas fa-times'></i>
 				</button>
-				<ul className='sidebar-links' onClick={toggleSidebar}>
+				<ul
+					className={`${isOpen ? 'sidebar-links' : ''} `}
+					onClick={toggleSidebar}
+				>
 					<li>
 						<Link to='/'>home</Link>
 					</li>
@@ -24,7 +27,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 					</li>
 				</ul>
 				<div>
-					<SocialLinks styleClass='social-icons' />
+					<SocialLinks
+						styleClass={`${
+							isOpen ? 'sidebar-icons social-icons' : 'social-icons'
+						} `}
+					/>
 				</div>
 			</div>
 		</aside>
