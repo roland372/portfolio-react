@@ -15,11 +15,7 @@ const FeaturedProject = ({
 		return (
 			<article className='single-project'>
 				<div className='project-container'>
-					<img
-						src={image}
-						alt='single project'
-						className='featured-project-img'
-					/>
+					<img src={image} alt='single project' />
 					<a href={url} className='featured-project-icon'>
 						<FaHome />
 					</a>
