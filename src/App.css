@@ -927,3 +927,17 @@ Single Page
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
+
+.error-page {
+	background: var(--clr-grey-10);
+	display: grid;
+	min-height: calc(100vh - 17.75rem);
+	/* min-height: 100vh; */
+	place-items: center;
+	text-align: center;
+}
+.error-page h1 {
+	color: var(--clr-primary-2);
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+}
