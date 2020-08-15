@@ -6,10 +6,10 @@ const navActiveLink = { color: '#0066ff', fontWeight: 'bold' };
 
 const Navbar = ({ toggleSidebar }) => {
 	const [navClass, setNavClass] = React.useState('nav');
-	const handleScroll = React.useCallback(() => {
+	const handleScroll = () => {
 		let scrollTop = window.scrollY;
 		scrollTop > 0 ? setNavClass('nav navbar-fixed') : setNavClass('nav');
-	});
+	};
 
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll);

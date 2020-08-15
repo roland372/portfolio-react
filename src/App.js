@@ -33,7 +33,5 @@ export default App;
 
 // todo
 // not found page
-// sidebar animation
-// add projects hover
-// featured projects icon animation
-// make contact form working
+// change displayed page name - home, about, etc.
+// make navlinks and sidebar links into component

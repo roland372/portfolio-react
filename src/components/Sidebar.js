@@ -1,6 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import SocialLinks from '../components/SocialLinks';
+
+const navActiveLink = { color: '#0066ff', fontWeight: 'bold' };
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 	return (
@@ -14,16 +17,24 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 					onClick={toggleSidebar}
 				>
 					<li>
-						<Link to='/'>home</Link>
+						<NavLink activeStyle={navActiveLink} exact to='/'>
+							home
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/about'>about</Link>
+						<NavLink activeStyle={navActiveLink} to='/about'>
+							about
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/projects'>projects</Link>
+						<NavLink activeStyle={navActiveLink} to='/projects'>
+							projects
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/contact'>contact</Link>
+						<NavLink activeStyle={navActiveLink} to='/contact'>
+							contact
+						</NavLink>
 					</li>
 				</ul>
 				<div>

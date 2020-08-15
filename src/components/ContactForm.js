@@ -1,13 +1,17 @@
 import React from 'react';
 import Title from '../components/Title';
 
+// formspree
+const formspreeUrl = process.env.REACT_APP_API_KEY;
+console.log(formspreeUrl);
+
 const Contact = () => {
 	return (
 		<section className='contact-page'>
 			<Title title='contact form' />
 			<article className='contact-form'>
 				<h3>contact me</h3>
-				<form action={`https://formspree.io/`} method='POST'>
+				<form action={`https://formspree.io/${formspreeUrl}`} method='POST'>
 					<div className='form-group'>
 						<input
 							type='text'

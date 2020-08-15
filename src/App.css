@@ -530,20 +530,24 @@ Featured Projects
 	position: relative;
 }
 .featured-project-icon {
-	position: absolute;
-	font-size: 1.75rem;
-	bottom: 0;
-	left: 50%;
 	-webkit-transform: translate(-50%, 50%);
-	transform: translate(-50%, 50%);
-	width: 4rem;
-	height: 4rem;
-	display: grid;
-	place-items: center;
 	background: var(--clr-primary-7);
 	border-radius: 50%;
-	color: var(--clr-primary-1);
 	border: 0.375rem solid var(--clr-grey-10);
+	bottom: 0;
+	color: var(--clr-primary-1);
+	display: grid;
+	font-size: 1.75rem;
+	height: 4rem;
+	left: 50%;
+	place-items: center;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	width: 4rem;
+}
+.featured-project-icon:hover {
+	background: var(--clr-primary-8);
+	transition: var(--transition);
 }
 .project-details {
 	padding: 2rem 1.5rem;
